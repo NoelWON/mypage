@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
 
 
-    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <title>1주차 숙제</title>
     <style>
         /* 폰트 지정 */
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
@@ -22,7 +22,6 @@
         * {
             font-family: 'Gowun Dodum', sans-serif;
         }
-
         .mytitle {
             background-color: green;
             color: white;
@@ -40,7 +39,6 @@
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
             background-position: center;
             background-size: cover;
-
         }
 
         /* mytitle 아래의 버튼을 지정해준다. */
@@ -59,8 +57,6 @@
 
         .mytitle>button:hover {
             border: 2px solid white;
-
-
         }
 
         .mycomment {
@@ -70,7 +66,6 @@
         .mycard {
             width: 1200px;
             margin: 20px auto 20px auto;
-
         }
 
         .mypost {
@@ -80,9 +75,9 @@
             padding: 20px 20px 20px 20px;
             /* 가운데 기준으로 아래 옆에 방향으로 얼마나 먼지 */
             box-shadow: 0px 0px 3px 0px grey;
-
         }
         .mybtn{
+            /* 구역내에서 가운데 정렬하는 코드 */
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -107,6 +102,17 @@
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화 URL</label>
         </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">나의 별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>--선택하기--</option>
+              <option value="1">⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+              <option value="4">⭐⭐⭐⭐</option>
+              <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+          </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">코멘트</label>
@@ -122,52 +128,52 @@
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://www.themoviedb.org/t/p/original/9XhAZZAMkVB2WC4A710Y4zcPDhb.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">코멘트가 들어가는 부분</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycommnet">나의 코멘트를 적는 부분</p>
+                        <h5 class="card-title">타잔</h5>
+                        <p class="card-text">정글라이프</p>
+                        <p>⭐⭐⭐⭐ </p>
+                        <p class="mycommnet">굿굿굿</p>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://www.themoviedb.org/t/p/original/AuSZ0KEbX5QIkv0jpPHBlsIzF5Z.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">코멘트가 들어가는 부분</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycommnet">나의 코멘트를 적는 부분</p>
+                        <h5 class="card-title">알라딘</h5>
+                        <p class="card-text">지니지니</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycommnet">소원3개</p>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://www.themoviedb.org/t/p/original/z8onk7LV9Mmw6zKz4hT6pzzvmvl.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">코멘트가 들어가는 부분</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycommnet">나의 코멘트를 적는 부분</p>
+                        <h5 class="card-title">케레비안의 해적</h5>
+                        <p class="card-text">해적life</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycommnet">조니뎁</p>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://www.themoviedb.org/t/p/original/iR1bVfURbN7r1C46WHFbwCkVve.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">코멘트가 들어가는 부분</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycommnet">나의 코멘트를 적는 부분</p>
+                        <h5 class="card-title">어바웃 타임</h5>
+                        <p class="card-text">시간여행자</p>
+                        <p>⭐⭐⭐⭐</p>
+                        <p class="mycommnet">레이첼 이쁘다</p>
 
                     </div>
                 </div>
